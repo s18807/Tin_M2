@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Felix</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Felix</h1>
+        <img src="../images/logo.png" alt="Felix Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="/users">Użytkownicy</a></li>
+            <li><a href="/transakcje">Transakcje</a></li>
+            <li><a href="/produkty">Produkty</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Edycja</p>
+        <form class="form">
+            <label for="idprodukt">ID Produkt:*</label>
+            <input type="text" name="idprodukt" id="idprodukt" value="1" disabled>
+            <span id="errorNazwa">Pole jest wymagane</span>
+            <label for="Nazwa">Nazwa:*</label>
+            <input type="text" name="nazwa" id="nazwa" value="masło">
+            <span id="errorNazwa">Pole jest wymagane</span>
+            <label for="cena">Cena:*</label>
+            <input type="number" name="cena" id="cena" value="12">
+            <span id="errorCena">Pole jest wymagane</span>
+            <label for="dataSpozycia">Data Spożycia:</label>
+            <input type="date" name="dataSpozycia" id="dataSpozycia" value="12.12.1122">
+            <span id="errorDataSpozycia">Pole jest wymagane</span>
+
+            <div>
+                <a href="Produkty.html" class="list-actions-button-edit">Edytuj</a>
+                <a href="Produkty.html" class="form-button-cancel">Powrót</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        Marcin Suchora s18807
+    </footer>
+</body>
+
+</html>

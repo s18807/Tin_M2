@@ -1,0 +1,28 @@
+<tbody>
+    <% for (let emp of emps) { %>
+        <tr>
+            <th>
+                <%= emp._id %>
+            </th>
+            <th>
+                <%= emp.Imie %>
+            </th>
+            <th>
+                <%= emp.Email %>
+            </th>
+            <th>
+                <ul class="list-actions">
+                    <li>
+                        <a href="UzytkownicyFormDetails.html" class="list-actions-button-details">Szczegóły</a>
+                    </li>
+                    <li>
+                        <a href="UzytkownicyFormEdit.html" class="list-actions-button-edit">Edytuj</a>
+                    </li>
+                    <li>
+                        <a class="list-actions-button-delete">Usuń</a>
+                    </li>
+                </ul>
+            </th>
+        </tr>
+        <% } %>
+</tbody>

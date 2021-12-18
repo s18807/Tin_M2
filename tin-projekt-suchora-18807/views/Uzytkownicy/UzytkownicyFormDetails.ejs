@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Felix</title>
+</head>
+
+<body>
+    <header>
+        <h1>Felix</h1>
+        <img src="../images/logo.png" alt="Felix Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="/users">Użytkownicy</a></li>
+            <li><a href="/transakcje">Transakcje</a></li>
+            <li><a href="/produkty">Produkty</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Szczegóły Użytkownika</p>
+        <form class="form">
+            <label for="id">ID:</label>
+            <input type="number" name="id" id="id" value="1" disabled>
+            <span id="errorImie"></span>
+
+            <label for="imie">Imie:*</label>
+            <input type="text" name="imie" id="imie" value="Marcin" disabled>
+            <span id="errorImie"></span>
+            <label for="nazwisko">Nazwisko:*</label>
+            <input type="text" name="nazwisko" id="nazwisko" value="Suchora" disabled>
+            <span id="errorNazwisko"></span>
+            <label for="adres">Adres:</label>
+            <input type="text" name="adres" id="adres" value="Taka 2" disabled>
+            <span id="errorAdres"></span>
+            <label for="telefon">Telefon:</label>
+            <input type="tel" name="telefon" id="telefon" value="123456789" disabled>
+            <span id="errorTelefon"></span>
+            <label for="mail">Mail:*</label>
+            <input type="text" name="mail" id="mail" value="mata@wp.pl" disabled>
+            <span id="errorMail"></span>
+
+        </form>
+        <p>Szczegóły</p>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>ID Zamowienia</th>
+                    <th>Produkt</th>
+                    <th>Koszt</th>
+                    <th>Znizka</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>Masło</th>
+                    <th>12.00</th>
+                    <th>10%</th>
+                </tr>
+            </tbody>
+        </table>
+        <a href="Uzytkownicy.html" class="form-button-cancel">Powrót</a>
+    </main>
+    <footer>
+        Marcin Suchora s18807
+    </footer>
+</body>
+
+</html>

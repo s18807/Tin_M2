@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Felix</title>
+</head>
+
+<body>
+    <header>
+        <h1>Felix</h1>
+        <img src="../images/logo.png" alt="Felix Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="/users">Użytkownicy</a></li>
+            <li><a href="/transakcje">Transakcje</a></li>
+            <li><a href="/produkty">Produkty</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Szegóły Transakcji</p>
+        <form class="form">
+            <label for="IdTrans">Id Transjakcji:*</label>
+            <input type="number" name="IdTrans" id="IdTrans" value="1" disabled>
+            <br><label for="IdOs">Id Osoby:*</label>
+            <input type="number" name="IdOs" id="IdOs" value="1" disabled>
+            <br><label for="koszt">Koszt:*</label>
+            <input type="number" name="koszt" id="koszt" value="12" disabled>
+            <br><label for="data">Data:</label>
+            <input type="date" name="data" id="data" value="12.12.2012" disabled>
+            <br><label for="koszt">Koszt*:</label>
+            <input type="number" name="koszt" id="koszt" value="12" disabled>
+            <br><label for="znizka">Zniżka:</label>
+            <input type="text" name="znizka" id="znizka" value="12" disabled>
+            <br><label for="mail">Mail:</label>
+            <input type="text" name="mail" id="mail" value="marcin@wp.pl" disabled>
+            <br>
+            <div>
+                <input type="submit" value="Dodaj" class="button-add">
+                <a href="../Transakcje/Transakcje.html" class="form-button-cancel">Anuluj</a>
+            </div>
+        </form>
+        <p>Szczegóły</p>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nazwa</th>
+                    <th>Cena</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>Masło</th>
+                    <th>12,00</th>
+
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Imie</th>
+                    <th>Nazwisko</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>Marcin</th>
+                    <th>Suchora</th>
+
+                </tr>
+            </tbody>
+        </table>
+        <a href="../Transakcje/Transakcje.html" class="form-button-cancel">Powrót</a>
+    </main>
+    <footer>
+        Marcin Suchora s18807
+    </footer>
+</body>
+
+</html>

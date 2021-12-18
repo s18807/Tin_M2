@@ -1,0 +1,50 @@
+<html>
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="application/javascript" src="../js/ValidateProdukty.js"></script>
+    <script type="text/javascript" src="../js/validationCommon.js"></script>
+    <title>Felix</title>
+</head>
+
+<body>
+    <header>
+        <h1>Felix</h1>
+        <img src="../images/logo.png" alt="Felix Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="/users">Użytkownicy</a></li>
+            <li><a href="/transakcje">Transakcje</a></li>
+            <li><a href="/produkty">Produkty</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Nowy Produkt</p>
+        <form class="form" novalidate onsubmit="return validateForm();">
+            <label for="Nazwa">Nazwa:*</label>
+            <input type="text" name="nazwa" id="nazwa" placeholder="2-120 znaków">
+            <span id="errorNazwa" class="errors-text"></span>
+            <label for="cena">Cena:*</label>
+            <input type="text" name="cena" id="cena" placeholder="2-5 znaków">
+            <span id="errorCena" class="errors-text"></span>
+            <label for="dataSpozycia">Data Spożycia:</label>
+            <input type="date" name="dataSpozycia" id="dataSpozycia">
+            <span id="errorDataSpozycia" class="errors-text"></span>
+            <div>
+                <p id="errorSummary" class="errors-text"></p>
+                <input type="submit" id="submit" action="" value="Dodaj" class="button-add">
+                <a href="Produkty.html" class="form-button-cancel">Anuluj</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        Marcin Suchora s18807
+    </footer>
+</body>
+
+</html>

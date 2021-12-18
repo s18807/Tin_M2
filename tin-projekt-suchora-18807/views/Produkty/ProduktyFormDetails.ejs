@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Felix</title>
+</head>
+
+<body>
+    <header>
+        <h1>Felix</h1>
+        <img src="../images/logo.png" alt="Felix Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="/users">Użytkownicy</a></li>
+            <li><a href="/transakcje">Transakcje</a></li>
+            <li><a href="/produkty">Produkty</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Szczegóły</p>
+        <form class="form">
+            <label for="idprodukt">ID Produkt:*</label>
+            <input type="text" name="idprodukt" id="idprodukt" value="1" disabled>
+            <span id="errorNazwa"></span>
+            <label for="Nazwa">Nazwa:*</label>
+            <input type="text" name="nazwa" id="nazwa" value="masło" disabled>
+            <span id="errorNazwa"></span>
+            <label for="cena">Cena:*</label>
+            <input type="number" name="cena" id="cena" value="12" disabled>
+            <span id="errorCena"></span>
+            <label for="dataSpozycia">Data Spożycia:</label>
+            <input type="date" name="dataSpozycia" id="dataSpozycia" value="12.12.1122" disabled>
+            <span id="errorDataSpozycia"></span>
+
+        </form>
+        <p>Szczegóły</p>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>ID Zamowienia</th>
+                    <th>Imie</th>
+                    <th>Nazwisko</th>
+                    <th>Koszt</th>
+                    <th>Znizka</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>Marek</th>
+                    <th>Jurek</th>
+                    <th>12.00</th>
+                    <th>10%</th>
+                </tr>
+            </tbody>
+        </table>
+        <a href="Produkty.html" class="form-button-cancel">Powrót</a>
+    </main>
+    <footer>
+        Marcin Suchora s18807
+    </footer>
+</body>
+
+</html>`

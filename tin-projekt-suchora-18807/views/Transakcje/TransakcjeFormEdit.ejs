@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Felix</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Felix</h1>
+        <img src="../images/logo.png" alt="Felix Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="/users">Użytkownicy</a></li>
+            <li><a href="/transakcje">Transakcje</a></li>
+            <li><a href="/produkty">Produkty</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Edycja</p>
+        <form class="form">
+            <label for="IdTrans">Id Transakcji:*</label>
+            <input type="number" name="IdTrans" id="IdTrans" value="1" disabled>
+            <br><label for="IdOs">Id Osoby:*</label>
+            <select type="" name="IdOs" id="IdOs">
+                    <option value="1" selected>Marcin Suchora</option>
+                    <option value="2">Jan Nowak</option>
+                </select>
+            <span id="errorIdOs"></span>
+            <label for="Idp">Id Produktu:*</label>
+            <select type="" name="Idp" id="Idp">
+                <option value="1" selected>Masło</option>
+                <option value="2">Czekolada</option>
+                </select><br>
+            <label for="koszt">Koszt:*</label>
+            <input type="text" name="koszt" id="koszt" value="12.00">
+            <span id="errorKoszt"></span>
+            <label for="data">Data:</label>
+            <input type="date" name="data" id="data" value="12.02.2012">
+            <span id="errorData"></span>
+            <label for="znizka">Zniżka:</label>
+            <input type="znizka" name="znizka" id="znizka" value="12%">
+            <span id="errorZnizka"></span>
+            <label for="mail">Mail:</label>
+            <input type="text" name="mail" id="mail" value="Marcin@wp.pl">
+            <span id="errorMail"></span>
+            <div>
+                <a href="Transakcje.html" class="list-actions-button-edit">Edytuj</a>
+                <a href="Uzytkownicy.html" class="form-button-cancel">Anuluj</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        Marcin Suchora s18807
+    </footer>
+</body>
+
+</html>

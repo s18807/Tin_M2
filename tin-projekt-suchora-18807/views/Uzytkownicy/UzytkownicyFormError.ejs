@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Felix</title>
+</head>
+
+<body>
+    <header>
+        <h1>Felix</h1>
+        <img src="../images/logo.png" alt="Felix Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="/users">Użytkownicy</a></li>
+            <li><a href="/transakcje">Transakcje</a></li>
+            <li><a href="/produkty">Produkty</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Nowy Użytkownik</p>
+        <form class="form" action="Uzytkownicy.html">
+            <label for="imie">Imie:*</label>
+            <input type="text" name="imie" id="imie">
+            <span id="errorImie" class="errors-text">Pole jest wymagane</span>
+            <label for="nazwisko">Nazwisko:*</label>
+            <input type="text" name="nazwisko" id="nazwisko">
+            <span id="errorNazwisko" class="errors-text">Pole jest wymagane</span>
+            <label for="adres">Adres:</label>
+            <input type="text" name="adres" id="adres">
+            <span id="errorAdres"></span>
+            <label for="telefon">Telefon:</label>
+            <input type="tel" name="telefon" id="telefon">
+            <span id="errorTelefon"></span>
+            <label for="mail">Mail:*</label>
+            <input type="text" name="mail" id="mail">
+            <span id="errorMail" class="errors-text">Pole jest wymagane</span>
+            <div>
+                <p id="errorSummary" class="errors-text">Formularz zawiera błędy</p>
+                <input type="submit" value="Dodaj" class="button-add">
+                <a href="Uzytkownicy.html" class="form-button-cancel">Anuluj</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        Marcin Suchora s18807
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="application/javascript" src="../js/ValidateTransakcje.js"></script>
+    <script type="text/javascript" src="../js/validationCommon.js"></script>
+    <title>Felix</title>
+</head>
+
+<body>
+    <header>
+        <h1>Felix</h1>
+        <img src="../images/logo.png" alt="Felix Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="/users">Użytkownicy</a></li>
+            <li><a href="/transakcje">Transakcje</a></li>
+            <li><a href="/produkty">Produkty</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Nowa Transakcja</p>
+        <form class="form" novalidate onsubmit="return validateForm();">
+            <label for="IdOs">Id Osoby:*</label>
+            <select type="" name="IdOs" id="IdOs">
+                    <option value="1">Marcin Suchora</option>
+                    <option value="2">Jan Nowak</option>
+            </select>
+            <span id="errorIdOs"></span>
+            <label for="Idp">Id Produktu:*</label>
+            <select type="" name="Idp" id="Idp">
+                    <option value="1">Masło</option>
+                    <option value="2">Czekolada</option>
+            </select><br>
+            <label for="koszt">Koszt:*</label>
+            <input type="text" name="koszt" id="koszt" placeholder="2-6 znaków">
+            <span id="errorKoszt" class="errors-text"></span>
+            <label for="data">Data:*</label>
+            <input type="date" name="data" id="data">
+            <span id="errorData" class="errors-text"></span>
+            <label for="znizka">Zniżka:</label>
+            <input type="text" name="znizka" id="znizka">
+            <span id="errorZnizka" class="errors-text"></span>
+            <label for="mail">Mail:</label>
+            <input type="text" name="mail" id="mail">
+            <span id="errorMail" class="errors-text"></span>
+            <div>
+                <p id="errorSummary"></p>
+                <input type="submit" value="Dodaj" class="form-button-submit">
+                <a href="Transakcje.html" class="form-button-cancel">Anuluj</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        Marcin Suchora s18807
+    </footer>
+</body>
+
+</html>
